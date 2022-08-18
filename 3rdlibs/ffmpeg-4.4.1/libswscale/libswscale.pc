@@ -1,0 +1,14 @@
+prefix=/home/baiyang/WasmPlayer/3rdlibs/ffmpeg-4.4.1/../../web_server/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/baiyang/WasmPlayer/3rdlibs/ffmpeg-4.4.1/../../web_server/ffmpeg/lib
+includedir=/home/baiyang/WasmPlayer/3rdlibs/ffmpeg-4.4.1/../../web_server/ffmpeg/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 5.9.100
+Requires: libavutil >= 56.70.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswscale -lm
+Libs.private: 
+Cflags: -I${includedir}

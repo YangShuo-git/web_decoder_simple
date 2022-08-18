@@ -1,0 +1,1 @@
+config:x86:x86_64:generic:linux:gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1):--prefix=/home/baiyang/WasmPlayer/3rdlibs/ffmpeg-4.4.1/../../web_server/ffmpeg --disable-everything --disable-x86asm --enable-muxer=h264 --enable-demuxer=h264 --enable-protocols

@@ -1,0 +1,14 @@
+prefix=/home/baiyang/WasmPlayer/3rdlibs/ffmpeg-4.4.1/../../web_server/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/baiyang/WasmPlayer/3rdlibs/ffmpeg-4.4.1/../../web_server/ffmpeg/lib
+includedir=/home/baiyang/WasmPlayer/3rdlibs/ffmpeg-4.4.1/../../web_server/ffmpeg/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.134.100
+Requires: libavutil >= 56.70.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}
