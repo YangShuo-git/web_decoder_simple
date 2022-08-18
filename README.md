@@ -61,22 +61,18 @@ var ret = Module._openDecoder(codecType, videoCallback, LOG_LEVEL_WASM)
 安装步骤可参考其[官方文档](https://emscripten.org/docs/getting_started/downloads.html)，目前支持 Windows, MacOS, Linux。
 ## 4.2 下载FFmpeg
 ```bash
-mkdir goldvideo
-cd goldvideo
-git clone https://git.ffmpeg.org/ffmpeg.git
-cd ffmpeg
-git checkout -b 4.1 origin/release/4.1
+下载并编译
 ```
-这里切到了4.1分支。
+这里版本是4.4.1。
 ## 4.3 下载本文的代码
 保证FFmpeg目录和代码目录平级。
 ```bash
-git clone http://github.com/goldvideo/decoder_wasm.git
-cd decoder_wasm
+git clone http://github.com/YangShuoys/web_decoder_simple.git
+cd web_decoder_simple
 
 目录结构：
 
-├─goldvideo
+├─web_decoder_simple
 │  ├─ffmpeg
 │  ├─decoder_wasm
 ```
@@ -94,13 +90,12 @@ H5使用Canvas来绘图，但是默认的2d模式只能绘制RGB格式，使用F
 ## 5.2 启动：
 
 ```bash
-npm install
-npm start
+
 ```
 ## 5.3 测试页面：
 
 ```
-http://localhost/test/main.html
+使用Nginx搭建Web服务器
 ```
 
 # 6 参考项目
