@@ -1,0 +1,2 @@
+# web_decoder_simple
+简易web解码器，可以将H264、H265码流解码为YUV数据，并使用WebGL渲染播放。基于WebAssembly技术，调用ffmpeg的库；使用Nginx搭建Web服务器
