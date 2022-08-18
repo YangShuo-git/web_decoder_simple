@@ -1,5 +1,5 @@
 # 1 简介
-借助于WebAssembly(简称Wasm)技术，实现在浏览器端调用ffmpeg接口完成H264、H265码流到YUV数据的解码。  
+基于WebAssembly(简称Wasm)技术，实现在浏览器端调用ffmpeg接口完成H264、H265码流到YUV数据的解码。  
 
 # 2 依赖
 ## 2.1 [WebAssembly (Wasm)](https://webassembly.org/)
